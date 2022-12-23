@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>PACV2 - Informacion de espacio</title>
+    <object th:insert="~{fragmentos :: fragmentoHead}" th:remove="tag"></object>
+    <object th:insert="~{fragmentos :: fragmentoDataTableHead}" th:remove="tag"></object>
+</head>
+<body>
+
+<div class="container">
+    Hola Mundo
+</div>
+
+<!-- pie -->
+<div class="row">
+    <div class="col-sm-12">
+        <object th:replace="~{fragmentos :: footer}" th:remove="tag"></object>
+    </div>
+</div>
+
+
+<object th:include="~{fragmentos :: scriptsBootstrap}" th:remove="tag"></object>
+<object th:include="~{fragmentos :: scriptsDataTable}" th:remove="tag"></object>
+<script th:src="@{/js/backingtracks/consultaBackingtracks.js}"></script>
+</body>
+</html>
