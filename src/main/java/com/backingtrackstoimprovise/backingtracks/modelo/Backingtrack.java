@@ -3,8 +3,7 @@ package com.backingtrackstoimprovise.backingtracks.modelo;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -23,7 +22,7 @@ public class Backingtrack {
     private String url;
 
     @Column(name = "fechaCatalogacion", nullable = false)
-    private LocalDateTime fechaCatalogacion;
+    private Date fechaCatalogacion;
 
     @Column(name = "bpm")
     private Integer bpm;
@@ -55,11 +54,11 @@ public class Backingtrack {
         this.url = url;
     }
 
-    public LocalDateTime getFechaCatalogacion() {
+    public Date getFechaCatalogacion() {
         return fechaCatalogacion;
     }
 
-    public void setFechaCatalogacion(LocalDateTime fechaCatalogacion) {
+    public void setFechaCatalogacion(Date fechaCatalogacion) {
         this.fechaCatalogacion = fechaCatalogacion;
     }
 

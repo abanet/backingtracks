@@ -8,7 +8,12 @@
 <body>
 
 <div class="container">
-    Hola Mundo
+    <table id="tablaVideos" class="display" style="width: 100%">
+        <thead>
+
+        </thead>
+        <tbody></tbody>
+    </table>
 </div>
 
 <!-- pie -->
@@ -19,8 +24,8 @@
 </div>
 
 
-<object th:include="~{fragmentos :: scriptsBootstrap}" th:remove="tag"></object>
-<object th:include="~{fragmentos :: scriptsDataTable}" th:remove="tag"></object>
+<object th:insert="~{fragmentos :: scriptsBootstrap}" th:remove="tag"></object>
+<object th:insert="~{fragmentos :: scriptsDataTable}" th:remove="tag"></object>
 <script th:src="@{/js/backingtracks/consultaBackingtracks.js}"></script>
 </body>
 </html>

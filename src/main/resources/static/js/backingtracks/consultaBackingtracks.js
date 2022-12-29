@@ -1,13 +1,12 @@
-var editor;
 $(document)
     .ready(
         function() {
 
 
             //
-            // Tabla
+            // Tabla de Backingtracks
             //
-            var tablaAsignaturaOtra = $('#tablaAsignaturaOtra').DataTable({
+            var tablaVideos = $('#tablaVideos').DataTable({
                 dom: 'Bfrtlip',
                 idSrc: 'id',
                 lengthMenu: [[25, 50, 100, 200, 500, -1],
@@ -18,7 +17,7 @@ $(document)
 
                 ajax: {
                     type: "GET",
-                    url: window.location.origin + '/es.pacv.api/listaAsignaturaOtra/' + idColectivo,
+                    url: window.location.origin + '/videos/listaVideos/',
                     dataType: 'json',
                     dataSrc: '',
                 },
