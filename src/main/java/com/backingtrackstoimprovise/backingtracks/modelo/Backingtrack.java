@@ -30,6 +30,17 @@ public class Backingtrack {
     @Column(name = "tono", length = 45)
     private String tono;
 
+    @Column(name = "puntuacion")
+    private Integer puntuacion;
+
+    public Integer getPuntuacion() {
+        return puntuacion;
+    }
+
+    public void setPuntuacion(Integer puntuacion) {
+        this.puntuacion = puntuacion;
+    }
+
     public Integer getId() {
         return id;
     }

@@ -1,0 +1,13 @@
+/*
+ * le damos un padding al body para que no se situe por encima del menú
+ */
+body {
+    padding-top: 70px;
+}
+
+/*
+ * Wrapper para que no se pegue el selector de número de registros al datatable.
+ */
+.wrapper_length {
+    padding-top: 2rem;
+}

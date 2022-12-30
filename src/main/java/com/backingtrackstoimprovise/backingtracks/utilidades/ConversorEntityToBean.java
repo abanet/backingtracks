@@ -11,18 +11,28 @@ import org.springframework.stereotype.Component;
 /*
  * Conversor Entity a Bean
  */
-@Component
 public final class ConversorEntityToBean {
 
 	private ConversorEntityToBean() {
 		throw new BackingGeneralException("ConversorEntityToBean no se puede instanciar");
 	}
 
+	public static BackingtrackDto backingtrackToBackingtrackDto(Backingtrack backingtrack) {
+		var backingtrackDto = new BackingtrackDto();
+		backingtrackDto.setId(backingtrack.getId());
+		backingtrackDto.setTitulo(backingtrack.getTitulo());
+		backingtrackDto.setUrl(Youtube.urlVideoConCodigo(backingtrack.getUrl()));
+		backingtrackDto.setFechaCatalogacion(backingtrack.getFechaCatalogacion());
+		backingtrackDto.setBpm(backingtrack.getBpm());
+		backingtrackDto.setTono(backingtrack.getTono());
+		backingtrackDto.setPuntuacion(backingtrack.getPuntuacion());
+		return backingtrackDto;
+	}
+
 	public static List<BackingtrackDto> backingtrackToBackingTrackDtoList(List<Backingtrack> listaBackingtrack) {
-		ModelMapper modelMapper = new ModelMapper();
 		return listaBackingtrack
 				.stream()
-				.map(e->modelMapper.map(e, BackingtrackDto.class))
+				.map(ConversorEntityToBean::backingtrackToBackingtrackDto)
 				.toList();
 	}
 

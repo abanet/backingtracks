@@ -6,15 +6,25 @@
     <object th:insert="~{fragmentos :: fragmentoDataTableHead}" th:remove="tag"></object>
 </head>
 <body>
-
+<object th:insert="~{fragmentos :: menu}" th:remove="tag"></object>
 <div class="container">
+
+<p>¡ Busca tu backingtrack favorito !</p>
+
     <table id="tablaVideos" class="display" style="width: 100%">
         <thead>
-
+            <th>id</th>
+            <th>title</th>
+            <th>url</th>
+            <th>date</th>
+            <th>bmp</th>
+            <th>Key</th>
+            <th>score</th>
         </thead>
         <tbody></tbody>
     </table>
-</div>
+
+
 
 <!-- pie -->
 <div class="row">
@@ -23,7 +33,7 @@
     </div>
 </div>
 
-
+</div>
 <object th:insert="~{fragmentos :: scriptsBootstrap}" th:remove="tag"></object>
 <object th:insert="~{fragmentos :: scriptsDataTable}" th:remove="tag"></object>
 <script th:src="@{/js/backingtracks/consultaBackingtracks.js}"></script>
