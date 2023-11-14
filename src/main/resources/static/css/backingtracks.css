@@ -1,0 +1,100 @@
+/*
+ * Paleta de colores utilizados
+ */
+:root {
+    --fondo: #f4f4f4;
+    --texto-principal: #333;
+    --white: #ffffff;
+    --azul: #138496;
+    --paletaUCMIntensidad1: #0F3759;
+    --paletaUCMIntensidad2: #03588C;
+    --paletaUCMIntensidad3: #048ABF;
+    --paletaUCMIntensidad4: #04B2D9;
+    --paletaUCMIntensidad5: #F2F2F2;
+    --avisosFondoAviso: rgba(4, 178, 217, 0.10);
+    --fondoRowGrupo: rgba(4, 138, 191, 0.9);
+    --bordeEntreFilas: rgba(4, 138, 191, 0.40);
+    --selectorTabla: rgba(12, 152, 208, 0.87) ;
+
+}
+
+/*
+ * Elementos principales de la página.
+ */
+.container {
+    max-width: 1200px; /* Establece el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Agrega un poco de espacio interior */
+}
+
+header {
+    background-color: var(--fondo);
+}
+ header h1 {
+     text-align: center;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--texto-principal);
+    background-color:var(--fondo);
+}
+
+
+#banner {
+    background-size: 100% auto; /* Todo el ancho */
+    height: 150px; /* Altura del banner */
+    width: 1200px; /* Ancho del banner */
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto del h1 */
+    justify-content: center; /* Alinea horizontalmente el texto del h1 */
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+#breadcrumb {
+    background-color: #f8f9fa;
+    padding: 5px 15px;
+    font-size: 0.85em;
+}
+
+main {
+    padding: 15px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
