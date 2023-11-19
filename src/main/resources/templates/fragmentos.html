@@ -27,30 +27,9 @@
 </div>
 <div th:fragment="scriptsDataTable">
     <!--DataTables-->
-    <script th:src="@{/DataTables/DataTables-1.12.1/js/jquery.dataTables.min.js}"
-            src="static/DataTables/DataTables-1.12.1/js/jquery.dataTables.min.js"></script>
-    <!--Buttons-->
-    <script th:src="@{/DataTables/Buttons-2.2.3/js/dataTables.buttons.min.js}"
-            src="static/DataTables/Buttons-2.2.3/js/dataTables.buttons.min.js"></script>
-    <script th:src="@{/DataTables/Buttons-2.2.3/js/buttons.html5.min.js}"
-            src="static/DataTables/Buttons-2.2.3/js/buttons.html5.min.js"></script>
-    <script th:src="@{/DataTables/Buttons-2.2.3/js/buttons.print.min.js}"
-            src="static/DataTables/Buttons-2.2.3/js/buttons.print.min.js"></script>
-    <!--Jszip-->
-    <script th:src="@{/DataTables/JSZip-2.5.0/jszip.min.js}"
-            src="static/DataTables/JSZip-2.5.0/jszip.min.js"></script>
-    <!--Select-->
-    <script th:src="@{/DataTables/Select-1.4.0/js/dataTables.select.min.js}"
-            src="static/DataTables/Select-1.4.0/js/dataTables.select.min.js"></script>
-    <!--RowGroup-->
-    <script th:src="@{/DataTables/RowGroup-1.2.0/js/dataTables.rowGroup.min.js}"
-            src="static/DataTables/RowGroup-1.2.0/js/dataTables.rowGroup.min.js"></script>
-    <!--searchBuilder-->
-    <script th:src="@{/DataTables/SearchBuilder-1.3.4/js/dataTables.searchBuilder.min.js}"
-            src="static/DataTables/SearchBuilder-1.3.4/js/dataTables.searchBuilder.min.js"></script>
-    <!--Sorting formato dd/mm/aaaa-->
-    <script th:src="@{/DataTables/Sorting/date-eu.js}"
-            src="static/DataTables/Sorting/date-eu.js"></script>
+    <script th:src="@{/datatables/datatables.min.js}"
+            src="static/datatables/datatables.min.js"></script>
+
 </div>
 
 <div th:fragment="scriptsDataTableEditor">
@@ -61,25 +40,8 @@
 
 <head th:fragment="fragmentoDataTableHead">
     <!--DataTables css-->
-    <link rel="stylesheet" th:href="@{/DataTables/DataTables-1.12.1/css/jquery.dataTables.min.css}"
-          href="static/DataTables/DataTables-1.12.1/css/jquery.dataTables.min.css">
-    <!--Buttons css-->
-    <link rel="stylesheet" th:href="@{/DataTables/Buttons-2.2.3/css/buttons.dataTables.min.css}"
-          href="static/DataTables/Buttons-2.2.3/css/buttons.dataTables.min.css">
-    <!--Select css-->
-    <link rel="stylesheet" th:href="@{/DataTables/Select-1.4.0/css/select.dataTables.min.css}"
-          href="static/DataTables/Select-1.4.0/css/select.dataTables.min.css">
-    <!--rowGroup-->
-    <link rel="stylesheet" th:href="@{/DataTables/RowGroup-1.2.0/css/rowGroup.dataTables.min.css}"
-          href="static/DataTables/RowGroup-1.2.0/css/rowGroup.dataTables.min.css">
-
-    <!--searchBuilder-->
-    <link rel="stylesheet" th:href="@{/DataTables/SearchBuilder-1.3.4/css/searchBuilder.dataTables.min.css}"
-          href="static/DataTables/SearchBuilder-1.3.4/css/searchBuilder.dataTables.min.css">
-
-    <!-- Modificación de estilos de datatables -->
-    <link rel="stylesheet" th:href="@{/css/ucm-datatables.css}"
-          href="static/css/ucm-datatables.css">
+    <link rel="stylesheet" th:href="@{/datatables/datatables.min.css}"
+          href="static/datatables/datatables.min.css">
 
 </head>
 <head th:fragment="fragmentoDataTableHeadEditor">
