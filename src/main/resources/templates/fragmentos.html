@@ -16,8 +16,18 @@
 
 
 
+<nav th:fragment="menu">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-
+<!-- pie -->
+<footer th:fragment="footer" id="footer" class="container-fluid">
+        <p>Alberto Banet Masa @ 2023</p>
+</footer>
 
 
 <!--/* SCRIPTS BOOTSTRAP - SIEMPRE FINAL DE PÁGINA */-->
@@ -50,10 +60,7 @@
           href="static/DataTables/Editor-2.0.10/css/editor.dataTables.min.css">
 </head>
 
-<!-- pie -->
-<div th:fragment="footer" id="footer" class="container-fluid">
 
-</div>
 
 <!-- boton de volver-->
 <div th:fragment="btnVolver" class="text-right">

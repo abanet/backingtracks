@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BackingTracks to Improvise: Contact</title>
+    <object th:include="fragmentos :: fragmentoHead" th:remove="tag"></object>
+    <object th:include="fragmentos :: fragmentoDataTableHead" th:remove="tag"></object>
+</head>
+<body>
+
+<header>
+    <h1>BackingTracks to Improvise: Contact</h1>
+    <div th:replace="fragmentos :: menu"></div>
+
+</header>
+<div id="breadcrumb">
+    <!-- Aquí va el camino de migas -->
+</div>
+<main>
+Página de contacto y sugerencias. Formulario para enviar mail sin que se vea mi correo electrónico.
+    A ver si se puede hacer q sea el servidor el que envíe el mail....
+</main>
+<div th:replace="fragmentos :: footer"></div>
+<object th:include="fragmentos :: scriptsDataTable" th:remove="tag"></object>
+<script th:inline="javascript" th:src="@{/js/inicio/inicio.js}"></script>
+</body>
+</html>
+c

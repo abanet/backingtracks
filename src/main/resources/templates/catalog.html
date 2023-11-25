@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BackingTracks to Improvise: Catalog</title>
+    <object th:include="fragmentos :: fragmentoHead" th:remove="tag"></object>
+    <object th:include="fragmentos :: fragmentoDataTableHead" th:remove="tag"></object>
+</head>
+<body>
+
+<header>
+    <h1>BackingTracks to Improvise: Catalog</h1>
+    <div th:replace="fragmentos :: menu"></div>
+
+</header>
+<div id="breadcrumb">
+    <!-- Aquí va el camino de migas -->
+</div>
+<main>
+
+</main>
+<div th:replace="fragmentos :: footer"></div>
+<object th:include="fragmentos :: scriptsDataTable" th:remove="tag"></object>
+<script th:inline="javascript" th:src="@{/js/inicio/inicio.js}"></script>
+</body>
+</html>
+c

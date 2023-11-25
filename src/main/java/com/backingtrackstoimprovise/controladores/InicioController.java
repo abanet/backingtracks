@@ -18,11 +18,18 @@ public class InicioController {
     @GetMapping("/")
     public String index() {
         var videos = videoRepositorio.findAll();
-
-
         return "index";
     }
 
+    @GetMapping("catalog")
+    public String catalog() {
+        return "catalog";
+    }
+
+    @GetMapping("contact")
+    public String contact() {
+        return "contact";
+    }
     @GetMapping("/v")
     public String informacionVideoYoutube() {
         return apiYoutubeService.getVideoDetails("PqK-b9-JxCA");
